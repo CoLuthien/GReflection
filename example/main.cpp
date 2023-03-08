@@ -1,13 +1,8 @@
 
 #include "reflection/reflection.hpp"
 #include <iostream>
-class Base
-{
-public:
-    GENERATE_BASE_OBJECT_BODY()
-};
 
-class Sample : public Base
+class Sample : public ReflectionBase
 {
 public:
     GENERATE_BODY();

@@ -42,5 +42,11 @@ public:                                                                         
 #define GENERATE_BASE_OBJECT_BODY()                                                      \
 public:                                                                                  \
     using super         = std::nullptr_t;                                                \
-    using this_type     = Base;                                                          \
+    using this_type     = ReflectionBase;                                                \
     using pedigree_list = meta::typelist<super>;
+
+class ReflectionBase
+{
+public:
+    GENERATE_BASE_OBJECT_BODY()
+};
